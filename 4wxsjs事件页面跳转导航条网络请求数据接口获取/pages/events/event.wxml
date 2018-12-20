@@ -1,0 +1,9 @@
+<!--pages/events/event.wxml-->
+<text>pages/events/event.wxml</text>
+<!-- 常用
+        bindtap:点击事件  冒泡
+        catchtap: 阻止冒泡的点击事件
+        e: 事件对象
+        captrue-bindtap 捕获
+ -->
+ <view catchtap="click">看看event对象</view>

@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/search/list",
+    "pages/template/template"
+  ],
+  "window": {
+      "navigationStyle": "custom"
+  }
+}

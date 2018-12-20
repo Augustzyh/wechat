@@ -1,0 +1,7 @@
+.list{
+  padding:20rpx;
+}
+.list image{
+  width:100%;
+  display: block;
+}

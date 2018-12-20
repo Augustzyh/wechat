@@ -1,0 +1,26 @@
+<template name="list">
+  <view>
+  <!-- <template is="aaa" wx:for="{{images}}" data="{{...item}}" wx:key="{{index}}"></template> -->
+    <template is="aaa" wx:for="{{images}}" data="{{item,index}}" wx:key="{{index}}"></template>
+    <!-- <view wx:for="{{images}}" wx:key="{{index}}">
+      这里是模板{{index}}
+      <image src="{{item}}"></image>
+    </view> -->
+  </view>
+</template>
+<!-- 若images里[{title：，msg：，},{},{}]是这种形式，data=“{{...item}}  使用直接msg，title就行了-->
+<!-- <template name="aaa">
+    <view>
+      这里是{{title}}
+      <image src="{{msg}}"></image>
+    </view>
+</template> -->
+
+<template name="aaa">
+    <view class="list">
+      这里是模板{{index}}
+      <image src="{{item}}"></image>
+    </view>
+</template>
+
+<!-- 关于样式import引入 -->

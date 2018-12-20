@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/request/request",
+    "pages/nav/settings",
+    "pages/href/jump",
+    "pages/events/event",
+    "pages/home/wxs"
+  ],
+  "window": {
+    "navigationBarTitleText": "Demo",
+    "navigationBarBackgroundColor": "#abc",
+    "navigationStyle": "custom"
+  }
+}

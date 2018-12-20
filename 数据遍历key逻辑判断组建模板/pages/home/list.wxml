@@ -1,0 +1,26 @@
+<!--pages/home/list.wxml-->
+<!-- index默认索引，item默认当前元素 -->
+<!-- 更改这两个值 -->
+<view wx:for="{{arr}}" wx:for-item="val" wx:for-index="idx" wx:key="item">
+  <!-- {{index}}: {{item}} -->
+  {{idx}}: {{val}}
+</view>
+<view wx:for="{{obj}}" wx:key="item.age">
+  名字：{{item.title}} /  年龄： {{item.age}}
+</view>
+
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{arr}}"  wx:key="item">
+    <checkbox value="test" checked="{{item}}"/>{{item}}
+  </label>
+</checkbox-group>
+
+<!-- //点击事件bindtap -->
+<button bindtap="push">添加更多</button>
+
+<!-- //if -->
+<view wx:if="{{true}}">这是真的</view>
+<view wx:else>这是假的</view>
+
+<!-- 遇到新的if断掉block抱起来，不具备任何意义不会被渲染 -->
+<block></block>

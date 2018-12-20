@@ -1,0 +1,6 @@
+<!--pages/home/modole.wxml-->
+<text>pages/home/modole.wxml</text>
+<!-- 粒度：把公用的代码或组建抽离的足够小，n个组件合成一个功能 -->
+<import src="/template/list/list.wxml" />
+<!-- 这里绑定的数据模板里用 -->
+<template is="list" data="{{images}}" />

@@ -1,0 +1,19 @@
+<!--pages/search/list.wxml-->
+<import src="../template/template.wxml" />
+<view class="container">
+  <image src="/images/back.png" class="back" bindtap="back"></image>
+  <scroll-view class="imgs-container" 
+          scroll-y 
+          bindscrolltolower="more"
+  >
+  <view class="flex-container">
+      <template is="list" wx:for="{{imgs}}" 
+            wx:for-item="list" data="{{list}}" wx:key="{{list.thumb}}" />
+  </view>
+<!-- 
+    <view class="imgs-list">
+      <template is="item" wx:for="{{imgs.right}}" data="{{...item}}" wx:key="{{thumb}}" />
+    </view> -->
+
+  </scroll-view>
+</view>

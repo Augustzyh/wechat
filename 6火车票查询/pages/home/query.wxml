@@ -1,0 +1,31 @@
+<!--pages/home/query.wxml-->
+<view class="container">
+  <view class="top">
+    <image class="bg" src="//images3.c-ctrip.com/train/h5/train-index-adv-default.png"></image>
+    <view class="back">
+      <image src="/images/back.png"></image>
+    </view>
+  </view>
+  <form class="query" bindsubmit="query">
+    <view class="query-city">
+      <input name="from" />
+      <image class="backto" src="/images/backto.png"></image>
+      <input name="to"/>
+    </view>
+    <view class="time-view">
+    <picker mode="date" value="{{date}}" start="{{startTime}}" end="{{getTime}}" bindchange="goTime"> 
+          <view class="picker">
+            出发日期
+          </view>
+          <input name="goTime" value="{{goTime ? goTime : startTime}}"></input>
+    </picker>
+    <picker mode="date" value="{{date}}" start="{{goTime ? goTime : startTime}}" end="{{getTime}}" bindchange="endTime"> 
+          <view class="picker">
+            到达日期
+          </view>
+          <input name="endTime"  value="{{endTime ? endTime : goTime}}" ></input>
+    </picker>
+    </view>
+    <button class="query-btn" form-type="submit">查询</button>
+  </form>
+</view>

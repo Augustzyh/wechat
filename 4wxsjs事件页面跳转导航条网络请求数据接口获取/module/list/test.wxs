@@ -1,0 +1,4 @@
+var t = "hello"
+module.exports = {
+  txt: t
+}

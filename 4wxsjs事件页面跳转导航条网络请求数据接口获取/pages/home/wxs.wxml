@@ -1,0 +1,36 @@
+<!--pages/home/wxs.wxml-->
+<!-- 单例模式 多文件调用这个wxs其实都是调用同一个文件，内存地址相同 a改变wxs内部b跟着变 -->
+<!-- module 外部调用{{n1}} -->
+<wxs module="n1">
+  var t = "hello"
+  module.exports = {
+    t: t
+  }
+</wxs>
+<text>{{n1.t}}</text>
+<!-- img属性 mode="widthFix" 保持比例 -->
+<!-- 改变日期时间 -->
+<!-- <wxs module="list">
+  function codeTime(time) {
+    var reg = getRegExp("(\d{4})-(\d{2})-(\d{2})(.*)");
+    return time.replace(reg, "$1/$2/$3 $4")
+  }
+  module.exports = {
+    codeTime:codeTime
+  }
+</wxs> -->
+
+<!-- src仅相对 -->
+<wxs src="../../module/list/common.wxs" module="list" />
+
+
+<!-- 数据权交给逻辑层打包不好，视图层处理就行了如日期 -->
+<view class="posts-item" wx:for="{{posts}}" wx:key="item.title">
+  <view class="cover" bindtap="jump">
+    <image src="{{item.img}}" mode="widthFix"></image>
+  </view>
+  <view class="font">
+    1{{list.txt}}{{item.title}}
+    <text>{{list.codeTime(item.time)}}</text>
+  </view>
+</view>

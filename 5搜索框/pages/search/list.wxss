@@ -1,0 +1,44 @@
+/* pages/search/list.wxss */
+.container .back{
+  position:fixed;
+  left:5%;
+  top:5%;
+  width:35px;
+  height:35px;
+  z-index:99;
+}
+.imgs-container{
+  box-sizing:border-box;
+  width:100vw;
+  height:100vh;
+}
+.flex-container{
+  display: flex;
+}
+.imgs-list{
+  flex:1;
+}
+.imgs-item{
+  position: relative;
+  box-sizing:border-box;
+  padding:5rpx;
+}
+.imgs-item image{
+  display: block;
+  width:100%;
+  height:100%;
+}
+.imgs-item .tab{
+  overflow: hidden;
+  position: absolute;
+  width:97.5%;
+  height:30px;
+  bottom:0;
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8));
+}
+.imgs-item .tab image{
+  height:100%;
+  width:30px;
+  float:right;
+  margin-right: 5%;
+}

@@ -1,0 +1,59 @@
+/* pages/search/search.wxss */
+.bg{
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  z-index:-1;
+  filter:blur(5px);
+}
+.container{
+  overflow: hidden;
+  width: 100vw;
+}
+.logo{
+  display: block;
+  padding:100rpx;
+  text-align: center;
+  font-size:35px;
+  letter-spacing: 5px;
+}
+.search-view{
+  margin-top: 20%;
+  padding: 0 50rpx;
+}
+.search-form{
+  display: block;
+  overflow: hidden;
+  border:1px solid #fff;
+  padding:5px;
+  border-radius:5px;
+}
+.search-form button{
+  float: right;
+  width:35px;
+  height:35px;
+  background: transparent;
+}
+.search-form button:after{
+  border:none;
+}
+.search-form input{
+  height:35px;
+  caret-color:#fff;
+  color:#fff;
+}
+.search-form button image{
+  display: block;
+  width:100%;
+  height:100%;
+}
+.like{
+  display:flex;
+  flex-wrap:wrap;
+  padding-top:3px;
+}
+.like navigator{
+  text-align: center;
+  width:25%;
+  padding:3px 0;
+}

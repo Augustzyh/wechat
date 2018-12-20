@@ -1,0 +1,19 @@
+<!--pages/search/search.wxml-->
+<image src="/images/timg2.jpg" class="bg"></image>
+<view class="container">
+  <view class="search-view">
+    <text class="logo">
+      图片搜索
+    </text>
+    <form class="search-form" bindsubmit="query"> 
+      <button form-type="submit">
+        <image src="/images/search.png"></image>
+      </button>
+      <input name="q" />
+    </form>
+
+    <view class="like">
+      <navigator wx:for="{{like}}" wx:key="{{like}}" url="/pages/search/list?q={{item}}">{{item}}</navigator>
+    </view>
+  </view>
+</view>

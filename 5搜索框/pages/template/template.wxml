@@ -1,0 +1,17 @@
+<!--pages/template/template.wxml-->
+<!-- 图片列表 -->
+<template name="list">
+    <view class="imgs-list">
+      <template is="item" wx:for="{{list}}" data="{{...item}}" wx:key="{{thumb}}" />
+    </view>
+</template>
+
+<!-- 图片 -->
+<template name="item">
+  <view class="imgs-item">
+        <image src="{{thumb}}" mode="widthFix" bindtap="showImage"  data-src="{{middle}}"></image>
+        <view class="tab">
+          <image src="/images/download.png" mode="widthFix" bindtap="download" data-src="{{middle}}"></image>
+        </view>
+      </view>
+</template>

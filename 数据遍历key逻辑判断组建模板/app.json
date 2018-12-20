@@ -1,0 +1,21 @@
+{
+  "pages" : [
+    "pages/home/modole",
+    "pages/home/list"
+  ],
+  "tabBar": {
+    "color": "#000",
+    "borderStyle": "#000",
+    "selectedColor": "#d5371b",
+    "list": [
+      {
+        "text": "list",
+        "pagePath": "pages/home/list"
+      },
+      {
+        "text": "test",
+        "pagePath": "pages/home/modole"
+      }
+    ]
+  }
+}

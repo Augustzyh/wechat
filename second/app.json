@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/index",
+    "pages/test/test"
+  ],
+  "window": {
+    "navigationBarTitleText": "Octopus",
+    "navigationBarBackgroundColor": "#bbb",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#aba"
+  },
+  "tabBar": {
+    "color": "#000",
+    "borderStyle": "#000",
+    "selectedColor": "#d5371b",
+    "list": [
+      {
+        "text": "index",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "test",
+        "pagePath": "pages/test/test"
+      }
+    ]
+  }
+}
